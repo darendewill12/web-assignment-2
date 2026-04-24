@@ -1,26 +1,94 @@
+/* colour */
 :root {
---lightmode-color: #ffffff;
+--white-color: #ffffff;
+--body-bg: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+--body-bg1:  #EEAECA;
+--dark: #000000;
 }
 
-
-
+/* bodyyy */
 body {
-    background: #EEAECA;
-background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: var(--body-bg);
 }
 
-
+/* button for dark mode  */
 .darkmode{
-    background: #EEAECA;
-background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-color: white; 
+background: var(--body-bg);
+color: var(--white-color);
 }
 
+/* footer with links */
 footer{
 position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
-background-color: #EEAECA;
 text-align: center;
+}
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: auto ;
+    background: var(--white-color);
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: var(--dark);
+    margin-bottom: 1;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background: var(--dark);
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.social-icons a{
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
 }
