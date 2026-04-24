@@ -17,6 +17,85 @@ background: var(--body-bg);
 color: var(--white-color);
 }
 
+/* navbar */
+
+nav{
+    background: var(--white-color);
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-toggle{
+    font-size: 1.5rem;
+    color: var(--dark);
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3 linear;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    color: var(--dark);
+    transform: rotate(90deg)
+}
+
+.logo {
+    height: 40px;
+}
+
+.links a {
+    color: var(--dark);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--dark);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3 linear;
+}
+
+.links a:hover{
+    background: var(--white-color);
+    color: var(--dark);
+    padding-left: 1.5rem;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3 linear;
+}
+
+.show-links{
+    height: 10rem;
+}
+
+@media screen and (min-width: 800px){
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header{
+        padding: 0;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .links{
+        height: auto;
+        display: flex;
+    }
+}
+
+
 /* footer with links */
 footer{
 position: fixed;
@@ -25,6 +104,7 @@ bottom: 0;
 width: 100%;
 text-align: center;
 }
+
 .footer{
     margin-top: 150px;
     width: 100%;
