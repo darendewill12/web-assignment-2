@@ -4,96 +4,179 @@
 --body-bg: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 --body-bg1:  #EEAECA;
 --dark: #000000;
+--color-red-nav: rgb(219, 16, 16);
+--ff-bold: "Amatic SC", sans-serif;
+--ff-regular: "Amatic SC", sans-serif;
+--ff-regular-italic: "Alegreya SC", serif;
+--transition: all 0.3 linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--max-width: 1170px;
+--fixed-width: 620px;
+}
+
+/* fonts */
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.alegreya-sc-regular {
+  font-family: "Alegreya SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alegreya-sc-medium {
+  font-family: "Alegreya SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.alegreya-sc-bold {
+  font-family: "Alegreya SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.alegreya-sc-extrabold {
+  font-family: "Alegreya SC", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.alegreya-sc-black {
+  font-family: "Alegreya SC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.alegreya-sc-regular-italic {
+  font-family: "Alegreya SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.alegreya-sc-medium-italic {
+  font-family: "Alegreya SC", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.alegreya-sc-bold-italic {
+  font-family: "Alegreya SC", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.alegreya-sc-extrabold-italic {
+  font-family: "Alegreya SC", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.alegreya-sc-black-italic {
+  font-family: "Alegreya SC", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+/* html what is it  */ 
+html {
+scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* bodyyy */
 body {
     background: var(--body-bg);
+    font-family: var(--ff-regular-italic);
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:not(.logo) {
+    width: 100%;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-bold);
+}
+
+h1 {
+font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+margin-bottom: 1.25rem;
+color: var(--dark);
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
 }
 
 /* button for dark mode  */
-.darkmode{
+.darkmode {
 background: var(--body-bg);
 color: var(--white-color);
 }
 
 /* navbar */
 
-nav{
-    background: var(--white-color);
-}
-
-.nav-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.nav-toggle{
-    font-size: 1.5rem;
-    color: var(--dark);
-    background: transparent;
-    border-color: transparent;
-    transition: all 0.3 linear;
-    cursor: pointer;
-}
-
-.nav-toggle:hover {
-    color: var(--dark);
-    transform: rotate(90deg)
-}
-
-.logo {
-    height: 40px;
-}
-
-.links a {
-    color: var(--dark);
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: var(--dark);
-    display: block;
-    padding: 0.5rem 1rem;
-    transition: all 0.3 linear;
-}
-
-.links a:hover{
-    background: var(--white-color);
-    color: var(--dark);
-    padding-left: 1.5rem;
-}
-
-.links {
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3 linear;
-}
-
-.show-links{
-    height: 10rem;
-}
-
-@media screen and (min-width: 800px){
-    .nav-center {
-        max-width: 1170px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-    }
-    .nav-header{
-        padding: 0;
-    }
-    .nav-toggle{
-        display: none;
-    }
-    .links{
-        height: auto;
-        display: flex;
-    }
-}
 
 
 /* footer with links */
