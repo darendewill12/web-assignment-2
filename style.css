@@ -460,12 +460,13 @@ footer {
 
 .about-us-img img {
     max-width: 100%;
-    height: 750px;
-    width: 1400px;
+    height: auto;
 }
 
 .about-us-img {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutcontainer h2,
@@ -839,16 +840,16 @@ footer {
     margin: 40px auto;
     box-shadow: 0 0 25px var(--accent-color);
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: flex-start; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     animation: fadeIn 1.5 ease-in-out;
 }
 
 .forma-container h2 {
-    text-align: center; 
-   margin-bottom: 25px;
-   font-size: 2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
 }
 
 .input-group {
@@ -874,7 +875,8 @@ footer {
     font-weight: 500
 }
 
-input, textarea {
+input,
+textarea {
     background: rgba(40, 17, 139, 0.1);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
@@ -884,7 +886,8 @@ input, textarea {
     transition: 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: var(--light-purple);
     box-shadow: 0 0 10px var(--light-purple);
 }
@@ -967,7 +970,7 @@ input:focus, textarea:focus {
     font-weight: 600;
     text-align: center;
     transition: 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .custom-file-label:hover {
@@ -1021,3 +1024,24 @@ input:focus, textarea:focus {
     transform: translateY(-2px);
 }
 
+.container-web ul li {
+    list-style: none;
+}
+
+.container-web ul li p a {
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 0 15px var(--light-green);
+    color: var(--dark);
+}
+
+.webres-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webres-image img {
+    max-width: 100%;
+    height: auto;
+}
