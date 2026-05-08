@@ -21,3 +21,6 @@ themeSwitch.addEventListener("click", () => {
 themeSwitch.addEventListener("click", () => {
 darkmode !== "active" ? enableDarkmode() :disableDarkmode()
 })
+
+
+

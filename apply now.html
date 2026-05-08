@@ -11,6 +11,8 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="darkmode.js" defer></script>
+    <script type="text/javascript" src="checkbox.js" defer></script>
+
 </head>
 
 <body>
@@ -39,10 +41,10 @@
                     <a href="trainee profile.html">Trainee Profile</a>
                 </li>
                 <li>
-                    <a href="">Apply Now</a>
+                    <a href="apply now.html">Apply Now</a>
                 </li>
                 <li>
-                    <a href="">Web Resources</a>
+                    <a href="web resourcess.html">Web Resources</a>
                 </li>
 
                 <button id="theme-switch" class="nav-btn">
@@ -61,62 +63,77 @@
         </div>
     </header>
 
-<div class="aboutcontainer">
+    <div class="forma-container">
+        <h2>Job application form</h2>
+        <form id="jobform">
+            <div class="inputs-group">
+                <label>Full name </label>
+                <input type="text" placeholder="Enter Your Name" required>
+            </div>
+            <div class="inputs-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter Email" required>
+            </div>
+            <div class="inputs-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter Your Phone number" required>
+            </div>
+            <div class="inputs-group">
+                <label>LinkedIn Link</label>
+                <input type="url" placeholder="https://Linkedin.com/in/username">
+            </div>
+            <div class="drop-down">
+                <label>Highest Qualification</label>
+                <select>
+                    <option value="">Choose your degree</option>
+                    <option value="">BTEC Level 3</option>
+                    <option value="">Degree</option>
+                    <option value="">Bootcamp Certification</option>
+                </select>
+            </div>
+            <div class="inputs-group">
+                <label>Relevant Courses Completed</label>
+                <textarea placeholder="Write if you have more degrees" rows="4"></textarea>
+            </div>
+            <div class="inputs-groups">
 
-    <h1>About Hot Beans Web</h1>
+                <div class="inputs-groups">
+                    <label class="full">Technical Skills Checklist</label>
 
-    <h2>Our Story</h2>
-    <p>
-        Hot Beans Web is a leading web development agency dedicated to delivering high-quality, creative digital
-        solutions. <br> As a growing company, we pride ourselves on our technical expertise and our commitment to nurturing
-        the next generation of web developers. <br> We specialize in building responsive, functional, and user-friendly
-        websites that meet the specific needs of our diverse clientele.
-    </p>
+                    <label><input type="checkbox" id="html" value="html"> HTML</label>
+                    <label><input type="checkbox" id="css" value="css"> CSS</label>
+                    <label><input type="checkbox" id="javascript" value="javascript"> JavaScript</label>
 
-    <div class="about-us-img">
-        <img src="images/wmremove-transformed.png" alt="">
+                    <div>
+                        <label><input type="checkbox" id="other" value="other"> Other</label>
+                        <input type="text" id="otherValue" placeholder="Specify other skill">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="inputs-group">
+                <label>Upload CV</label>
+                <div class="file-input">
+                    <input type="file" id="cvupload" required>
+                    <label for="cvupload" class="custom-file-label">Choose File</label>
+                </div>
+            </div>
+            <div class="inputs-group">
+                <label>Cover Letter</label>
+                <div class="file-input">
+                    <input type="file" id="cov-letter">
+                    <label for="cov-letter" class="custom-file-label">Choose File</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+            <button type="reset" class="clear-btn">Clear</button>
+
+        </form>
     </div>
 
-    
-
-        <h2>Why Work With Us?</h2>
-        <p>
-            We are currently on a mission to expand our team of experts. <br> At Hot Beans Web, we offer a unique environment
-            where junior developers and trainees receive comprehensive induction and training to kickstart their careers. <br> We
-            believe in:
-        <ul>
-            <li>
-                <p>
-                    Individual Responsibility: We empower our developers to take ownership of their designs and technical
-                    decisions.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Creativity: We encourage innovative visual designs and alternative solutions to meet complex user
-                    requirements.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Professionalism: Our team maintains the highest standards of etiquette and supportive collaboration.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Excellence: We focus on optimizing every project for functionality, compatibility, and usability.
-                </p>
-            </li>
-        </ul>
-        </p>
-    
-        <h2>Our Mission</h2>
-        <p>
-            Our goal is to provide prospective employees with a clear pathway into the industry. <br> Whether you are a recent
-            graduate or have just completed a web development qualification, Hot Beans Web is the place to apply your skills
-            and grow within a professional web development company.
-        </p>
-    </div>
 
     <footer>
         <div class="footercontainer">
@@ -136,16 +153,16 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="">About Us</a>
+                        <a href="about us.html">About Us</a>
                     </li>
                     <li>
-                        <a href="">Trainee Profile</a>
+                        <a href="trainee profile.html">Trainee Profile</a>
                     </li>
                     <li>
-                        <a href="">Apply Now</a>
+                        <a href="apply now.html">Apply Now</a>
                     </li>
                     <li>
-                        <a href="">Web Resources</a>
+                        <a href="web resourcess.html">Web Resources</a>
                     </li>
                 </ul>
             </div>
@@ -154,6 +171,9 @@
             <p>Copyright &copy;2026; Designed by <span class="designer"></span> Maksym</p>
         </div>
     </footer>
+
+
+
 </body>
 
 </html>
